@@ -1,0 +1,12 @@
+diff --git a/index.js b/index.js
+index 79d1f22a8e7a27efb8841bb83cb682ea1ff3a59c..e1a7e4a2c8ffe8e697c7f90de01ebf2eae8b524b 100644
+--- a/index.js
++++ b/index.js
+@@ -10,6 +10,7 @@
+ const isNumber = require('is-number');
+ 
+ module.exports = function isOdd(value) {
++  console.log('>>>>>>>>>> patched version of is-odd <<<<<<<<<<');
+   const n = Math.abs(value);
+   if (!isNumber(n)) {
+     throw new TypeError('expected a number');
